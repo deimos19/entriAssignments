@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./src/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">About Me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">My Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a class="btn btn-warning" href="#" role="button">Link</a>
+                  </li> -->
+                  <li class="nav-item ms-2">
+                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        See CV
+                    </button>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div id="herosection">
+            <div class="container pt-5">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-6  text-left">
+                        <h1>Lorem, ipsum dolor.</h1>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quisquam nemo totam voluptate deserunt. Facere fugiat cupiditate recusandae. Veniam, vero!</p>
+                        <div class="d-grid gap-2 d-md-block">
+                            <button class="btn btn-warning" type="button">Button</button>
+                            <button class="btn btn-warning" type="button">Button</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <img src="./images/hero.webp" class="img-fluid" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="about" class="about  text-white ">
+            <div class="container pt-5 pb-5">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-6 order-1 order-lg-2 d-flex justify-content-center" >
+                        <img src="./images/banner.jpg" class="rounded img-fluid w-100 banner " alt="...">
+                    </div>
+                
+                    <div class="col-12 col-lg-6 order-2 order-lg-1 text-left">
+                        <h3>Lorem me</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quisquam nemo totam voluptate deserunt. Facere fugiat cupiditate recusandae. Veniam, vero! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores modi voluptate, quae, autem doloremque sit repellat mollitia adipisci sapiente dignissimos aliquam id reiciendis, tempore ratione nesciunt veritatis odio! Distinctio, magni!</p>
+                        <div class="d-grid gap-2 d-md-block">
+                            <button class="btn btn-warning" type="button">Button</button>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+        <div id="projects">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="./images/web1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">
+                            <a class="btn btn-warning" href="#" role="button">Know More...</a></small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="./images/web2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">
+                              <a class="btn btn-warning" href="#" role="button">Know More...</a></small>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="./images/web3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">
+                              <a class="btn btn-warning" href="#" role="button">Know More...</a></small>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            ...
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="./src/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
