@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./src/bootstrap/css/bootstrap.min.css">
 </head>
@@ -11,24 +12,21 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-              <a class="navbar-brand" href="#">Navbar</a>
+              <a class="navbar-brand" href="#">My Portfolio .</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">About Me</a>
+                    <a class="nav-link active" aria-current="page" href="#about">About Me</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">My Projects</a>
+                    <a class="nav-link active" aria-current="page" href="#projects">My Projects</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                    <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
                   </li>
-                  <!-- <li class="nav-item">
-                    <a class="btn btn-warning" href="#" role="button">Link</a>
-                  </li> -->
                   <li class="nav-item ms-2">
                     <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         See CV
@@ -45,13 +43,26 @@
             <div class="container pt-5">
                 <div class="row align-items-center">
                     <div class="col-12 col-lg-6  text-left">
-                        <h1>Lorem, ipsum dolor.</h1>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quisquam nemo totam voluptate deserunt. Facere fugiat cupiditate recusandae. Veniam, vero!</p>
+                        <h1>MERN Stack</h1>
+                        <h1 id="hero-text" class="fw-bolder text-warning">Developer</h1>
+                        <p>Computer Science Engineering Student</p>
+                        <p class="fw-bold">Welcome to my portfolio! Explore my projects in AI, Machine Learning, and Full Stack Development, where innovation meets real-world problem-solving.</p>
                         <div class="d-grid gap-2 d-md-block">
-                            <button class="btn btn-warning" type="button">Button</button>
-                            <button class="btn btn-warning" type="button">Button</button>
+                          <a href="./assets/DEVADARSH_M.pdf" class="btn btn-warning" download>Download CV</a>
+                            <button class="btn btn-warning" type="button">My Blogs</button>
                         </div>
+                        <div class="d-flex gap-2 mt-4 justify-content-lg-start justify-content-center">
+                          <a href="https://github.com/yourprofile" class="btn btn-light" target="_blank">
+                              <i class="fab fa-github"></i>
+                          </a>
+                          <a href="https://linkedin.com/in/yourprofile" class="btn btn-light" target="_blank">
+                              <i class="fab fa-linkedin"></i>
+                          </a>
+                          <a href="https://twitter.com/yourprofile" class="btn btn-light" target="_blank">
+                              <i class="fab fa-twitter"></i>
+                          </a>
+                      </div>
+                      
                     </div>
                     <div class="col-12 col-lg-6">
                         <img src="./images/hero.webp" class="img-fluid" alt="...">
@@ -67,10 +78,24 @@
                     </div>
                 
                     <div class="col-12 col-lg-6 order-2 order-lg-1 text-left">
-                        <h3>Lorem me</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quisquam nemo totam voluptate deserunt. Facere fugiat cupiditate recusandae. Veniam, vero! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores modi voluptate, quae, autem doloremque sit repellat mollitia adipisci sapiente dignissimos aliquam id reiciendis, tempore ratione nesciunt veritatis odio! Distinctio, magni!</p>
+                        <h3>About me</h3>
+                        <p>I am a Computer Science and Engineering student passionate about Machine Learning and Full Stack Development. With hands-on experience in AI-driven projects, I have built smart solutions like assistive spectacles for the blind and sign language recognition systems. I love solving real-world problems through technology, innovation, and creative coding.</p>
                         <div class="d-grid gap-2 d-md-block">
-                            <button class="btn btn-warning" type="button">Button</button>
+                          <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            Know more About me
+                          </button>
+                        </div>
+                        <div class="collapse" id="collapseExample">
+                          <div class="card card-body mt-2 bg-dark">
+                            <h5>My Approach & Interests</h5>
+                            <p>I believe that technology should be accessible, innovative, and impactful. Whether it's through coding, AI, or product development, I strive to create solutions that enhance human experiences and bridge technological gaps.
+                            Apart from development, I am always eager to learn about new advancements in AI, embedded systems, and scalable architectures. My long-term vision is to combine AI and IoT to build intelligent assistive devices and platforms.</p>
+                            <h5>Experience & Future Goals
+                            </h5>
+                            <p>I have gained industry experience through internships in Web and Frontend Development, where I worked on modern tech stacks, responsive UI, and optimized user experiences. Moving forward, I aim to deepen my expertise in AI, contribute to impactful projects, and potentially launch innovative tech products under my brand, Dravich.
+                            I love collaborating with like-minded individuals, so feel free to connect with me if you share a passion for AI, software engineering, or impactful tech solutions! 
+                            </p>
+                          </div>
                         </div>
                     </div>
                 </div>
@@ -80,13 +105,16 @@
         </div>
         <div id="projects">
             <div class="container">
+                <div class="section-heading">
+                    <h3 class="main-heading">My Projects</h3>
+                </div>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                     <div class="col">
                       <div class="card h-100">
                         <img src="./images/web1.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <h5 class="card-title">Sign Language and Recognition</h5>
+                          <p class="card-text">Indian Sign Language Detection & Recognition project is a web-based application that uses HTML, CSS, and JavaScript for the frontend, integrated with Machine Learning for real-time recognition of Indian Sign Language (ISL) gestures. The system captures hand gestures through a webcam, processes them using a trained ML model, and translates them into text or speech for communication.This project aims to bridge the communication gap between the deaf and the hearing community.</p>
                         </div>
                         <div class="card-footer">
                           <small class="text-muted">
@@ -98,8 +126,8 @@
                       <div class="card h-100">
                         <img src="./images/web2.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                          <h5 class="card-title">Hero Section for E-learning platform</h5>
+                          <p class="card-text">Hero Section for an E-Learning Platform project is a visually appealing and responsive landing section designed to engage users immediately. Built using HTML, CSS, and JavaScript, it features a compelling headline, a brief description of the platform’s benefits, and a clear call-to-action (CTA) like "Get Started" or "Enroll Now." It may also include animations, an interactive UI, and a modern design to enhance user experience. This section serves as the first impression of the platform, encouraging users to explore further.</p>
                         </div>
                         <div class="card-footer">
                             <small class="text-muted">
@@ -111,8 +139,9 @@
                       <div class="card h-100">
                         <img src="./images/web3.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                          <h5 class="card-title">Stock Prediction Website</h5>
+                          <p class="card-text">Stock Prediction Website is a web-based platform that provides users with insights into stock market trends using Machine Learning. Built with HTML, CSS, JavaScript, and backend technologies, it analyzes historical stock data to predict future prices. The system may include interactive charts, real-time market updates, and user-friendly visualizations to assist traders and investors in making informed decisions. This project aims to simplify stock market analysis with AI-driven predictions.
+                          </p>
                         </div>
                         <div class="card-footer">
                             <small class="text-muted">
@@ -123,23 +152,99 @@
                   </div>
             </div>
         </div>
+        <hr>
+        <div id="contact">
+          <div class="container">
+            <div class="section-heading">
+              <h3 class="main-heading">Contact Me</h3>
+          </div>
+            <div class="row align-items-center">
+              <div class="col-12 col-lg-6">
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your name here..">
+                  <label for="exampleFormControlInput2" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Enter your message</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 text-center">
+                <h4>Connect with me :</h4>
+                <div class="d-flex gap-2 justify-content-center">
+                  <a href="https://github.com/yourprofile" class="btn btn-warning" target="_blank">
+                      <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://linkedin.com/in/yourprofile" class="btn btn-warning" target="_blank">
+                      <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="https://twitter.com/yourprofile" class="btn btn-warning" target="_blank">
+                      <i class="fab fa-twitter"></i>
+                  </a>
+              </div>              
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
     </main>
-    <footer></footer>
+    <footer class="bg-dark text-light py-4 mt-3">
+      <div class="container">
+          <div class="row">
+              <!-- About Section -->
+              <div class="col-md-4">
+                  <h5>About Me</h5>
+                  <p>A passionate CSE student exploring AI, Full Stack Development, and assistive technologies.</p>
+              </div>
+  
+              <!-- Quick Links -->
+              <div class="col-md-4">
+                  <h5>Quick Links</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="#home" class="text-light text-decoration-none">Home</a></li>
+                      <li><a href="#about" class="text-light text-decoration-none">About</a></li>
+                      <li><a href="#projects" class="text-light text-decoration-none">Projects</a></li>
+                      <li><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+                  </ul>
+              </div>
+  
+              <!-- Social Media Links -->
+              <div class="col-md-4">
+                  <h5>Follow Me</h5>
+                  <a href="https://github.com/yourprofile" class="text-light me-3"><i class="fab fa-github fa-lg"></i></a>
+                  <a href="https://linkedin.com/in/yourprofile" class="text-light me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+                  <a href="https://twitter.com/yourprofile" class="text-light"><i class="fab fa-twitter fa-lg"></i></a>
+              </div>
+          </div>
+  
+          <hr class="bg-light">
+          
+          <!-- Copyright -->
+          <div class="text-center">
+              <p class="mb-0">&copy; 2025 Your Name. All Rights Reserved.</p>
+          </div>
+      </div>
+    </footer>
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <h5 class="modal-title" id="exampleModalLabel">CV</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-            ...
+              <img src="./images/DEVADARSH M_page-0001.jpg" class="img-fluid" alt="...">
+            </div>
+            <div class="modal-body">
+              <img src="./images/DEVADARSH M_page-0002.jpg" class="img-fluid" alt="...">
             </div>
             <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+              <a href="./assets/DEVADARSH_M.pdf" class="btn btn-warning" download>Download CV</a>
             </div>
         </div>
         </div>
