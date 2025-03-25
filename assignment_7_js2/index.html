@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator-entri</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    
+
+    <main>
+        <div class="container mt-5">
+            <div class="calculator-container mt-5">
+                <div class="calculator">
+                    <input type="text" id="display">
+                    <div class="btn-container">
+                        <button class="btn btn-warning" onclick="clearDisplay()">C</button>
+                        <button class="btn btn-warning" onclick="operation('/')">/</button>
+                        <button class="btn btn-warning" onclick="operation('*')">*</button>
+                        <button class="btn btn-warning" onclick="operation('+')">+</button>
+                        <button class="btn btn-warning" onclick="operation('-')">-</button>
+                        <button class="btn btn-warning" onclick="calculateSquare()">x²</button>
+                        <button class="btn btn-warning" onclick="calculateCube()">x³</button>
+                        <button class="btn btn-primary" onclick="calculate()">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
